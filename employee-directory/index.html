@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Directory</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Employee Directory</h1>
+    <div class="search-filter">
+      <input type="text" id="searchInput" placeholder="Search by name or email" />
+      <button id="filterToggle">Filter</button>
+    </div>
+  </header>
+
+  <div class="controls">
+    <label>Sort:
+      <select id="sortSelect">
+        <option value="">--Select--</option>
+        <option value="firstName">First Name</option>
+        <option value="department">Department</option>
+      </select>
+    </label>
+    <label>Show:
+      <select id="showCount">
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+        <option>100</option>
+      </select>
+    </label>
+    <button id="addEmployeeBtn" onclick="window.location='add-edit.html'">Add Employee</button>
+  </div>
+
+  <div class="main-content">
+    <aside class="filter-panel hidden" id="filterPanel">
+      <h3>Filter Employees</h3>
+      <label>First Name: <input type="text" id="filterFirstName" /></label>
+      <label>Department: <input type="text" id="filterDepartment" /></label>
+      <label>Role: <input type="text" id="filterRole" /></label>
+      <button id="applyFilter">Apply</button>
+      <button id="resetFilter">Reset</button>
+    </aside>
+    <section id="employeeList" class="employee-list"></section>
+  </div>
+
+  <footer class="footer">
+    <p>© 2025 Employee Directory App. All rights reserved.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.header {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header input {
+  padding: 5px;
+  width: 200px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  background-color: #fff;
+  align-items: center;
+}
+
+.controls select, .controls button {
+  padding: 5px;
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.filter-panel {
+  width: 200px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.hidden {
+  display: none;
+}
+
+.employee-list {
+  flex: 1;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.employee-list div {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.employee-list button {
+  margin-right: 10px;
+}
+
+.footer {
+  background: #222;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.form-page {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  background: #f0f0f0;
+}
+
+.employee-form {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.employee-form input, .employee-form select {
+  padding: 5px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.error-box {
+  color: red;
+}
